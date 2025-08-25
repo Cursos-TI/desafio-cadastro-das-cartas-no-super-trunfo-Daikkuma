@@ -64,6 +64,51 @@ int main() {
     printf ("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos);
     printf ("\n"); // pulando linha
 
+    // Iniciando do código da Carta 2
+
+    printf ("\nCarta 2:\n");
+
+        // O Computador nao le duas variaveis com o mesmo nome entao foi alterado as descricoes seguida com o nunmero 2
+    char estado2;
+    char codigo2 [50], nome_da_cidade2 [50];
+    int populacao2;
+    float area2;
+    float pib2;
+    int numero_de_pontos_turisticos2;
+
+   
+    printf ("Digite uma letra de A-H representando um dos oito estados: ");
+    scanf (" %c", &estado2);
+
+    printf ("Digite a letra do estado seguida de um numero de 01 a 04: ");
+    scanf ("%s", codigo2);
+    
+    printf ("Digite o nome da Cidade: ");
+    scanf ("%s", nome_da_cidade2);
+
+    printf ("Digite o numero de habitantes: ");
+    scanf (" %d", &populacao2); 
+    
+    printf ("Digite a área em km2: ");
+    scanf (" %f", &area2);
+
+    printf ("Digite o PIB: ");
+    scanf (" %f", &pib2);
+
+    printf ("Digite o número de pontos turisticos: ");
+    scanf (" %d", &numero_de_pontos_turisticos2);
+    printf ("\n");
+
+
+    printf ("Carta 2:\n");
+    printf ("Estado: %c\n", estado2);
+    printf ("Código da Carta: %s\n", codigo2);
+    printf ("Nome da Cidade: %s\n", nome_da_cidade2);
+    printf ("População: %d\n", populacao2);
+    printf ("Área: %f km²\n", area2);
+    printf ("PIB: %.2f bilhões de reais\n", pib2);
+    printf ("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos2);
+    printf ("\n"); // pulando linha
         
 
     return 0; // fim do programa
