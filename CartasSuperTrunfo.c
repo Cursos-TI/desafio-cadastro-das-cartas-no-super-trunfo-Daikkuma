@@ -19,8 +19,10 @@ int main() {
     float area;
     float pib;
     int numero_de_pontos_turisticos;
+    float densidade_populacional;
+    float PIB_per_capita;
 
-   
+       
     // Solicitar dados ao usuario com prinf e armazenar dados usando especificador de variaveis
     // char [] contém string, onde já tem o endereco de memoria e & é usado para variáveis que guardam um único valor. 
     //Isso inclui números (int, float) e um único caractere (char).
@@ -45,8 +47,14 @@ int main() {
 
     printf ("Digite o número de pontos turisticos: ");
     scanf (" %d", &numero_de_pontos_turisticos);
+
+    // adicionado float para fazer as contas de numero inteiro com flutuante e dividir os valores pela populacao, area e pib
+    densidade_populacional = (float)populacao / area;
+    PIB_per_capita = (float)pib / populacao;
+
     printf ("\n");
 
+    
 
 
     /* Exibição dos dados cadastrados com prinf de forma organizada e clara
@@ -59,12 +67,16 @@ int main() {
     printf ("Código da Carta: %s\n", codigo);
     printf ("Nome da Cidade: %s\n", nome_da_cidade);
     printf ("População: %d\n", populacao);
-    printf ("Área: %f km²\n", area);
-    printf ("PIB: %.2f bilhões de reais\n", pib);
+    printf ("Área em km²: %.2f\n", area);
+    printf ("PIB: %.2f\n", pib);
     printf ("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos);
+    printf ("Densidade Populacional em km²: %.2f \n", densidade_populacional); // NAO CONSGUI, REFAZER****
+    printf ("PIB per Capita: %.8f\n", PIB_per_capita); // NAO CONSGUI FAZER O VALOR APARECER SEM OS ZEROS NA FRENTE. VERIFICAR DEPOIS****
     printf ("\n"); // pulando linha
 
+
     // Iniciando do código da Carta 2
+
 
     printf ("\nCarta 2:\n");
 
@@ -75,6 +87,8 @@ int main() {
     float area2;
     float pib2;
     int numero_de_pontos_turisticos2;
+    float densidade_populacional2;
+    float PIB_per_capita2;
 
    
     printf ("Digite uma letra de A-H representando um dos oito estados: ");
@@ -97,6 +111,10 @@ int main() {
 
     printf ("Digite o número de pontos turisticos: ");
     scanf (" %d", &numero_de_pontos_turisticos2);
+
+    densidade_populacional2 = (float)populacao2 / area2;
+    PIB_per_capita2 = (float) pib2 / populacao2;
+
     printf ("\n");
 
 
@@ -105,9 +123,11 @@ int main() {
     printf ("Código da Carta: %s\n", codigo2);
     printf ("Nome da Cidade: %s\n", nome_da_cidade2);
     printf ("População: %d\n", populacao2);
-    printf ("Área: %f km²\n", area2);
-    printf ("PIB: %.2f bilhões de reais\n", pib2);
+    printf ("Área em km²: %f\n", area2);
+    printf ("PIB: %.2f\n", pib2);
     printf ("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos2);
+    printf ("Densidade Populacional em km²: %.2f \n", densidade_populacional2);
+    printf ("PIB per Capita: %.8f\n", PIB_per_capita2); // NAO CONSGUI FAZER O VALOR APARECER SEM OS ZEROS NA FRENTE. VERIFICAR DEPOIS****
     printf ("\n"); // pulando linha
         
 
